@@ -47,9 +47,12 @@ int main() {
     float superPoder1, superPoder2;
     
     printf("Carta 01:\n"); //insere as informações da primeira carta
+    printf("Informe o estado da carta: \n");
+    scanf("%s", &estado1);
     printf("Informe o código da carta: \n");
     scanf("%i", &codigoCarta1);
-
+    printf("Informe o nome da cidade: \n");
+    fgets(nomeCidade1, 50, stdin);
     printf("Informe a população da cidade: \n");
     scanf("%lu", &populacao1);
     printf("Informe a área da cidade: \n");
@@ -62,6 +65,12 @@ int main() {
     pibPerCapita1 = pib1 / populacao1;
 
     printf("Carta 02:\n"); //insere as informações da segunda carta
+    printf("Informe o estado da carta: \n");
+    scanf("%s", &estado2);
+    printf("Informe o código da carta: \n");
+    scanf("%i", &codigoCarta2);
+    printf("Informe o nome da cidade: \n");
+    fgets(nomeCidade2, 50, stdin);
     printf("Informe a população da cidade: \n");
     scanf("%lu", &populacao2);
     printf("Informe a área da cidade: \n");
@@ -73,8 +82,7 @@ int main() {
     densidadePopulacional2  = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
-    //disponibiliza os quadros com as informações das cartas
-    printf("\n\nCarta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %lu\nÁrea: %.2fkm²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %lu\nÁrea: %.2fkm²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", populacao1, area1, pib1, numPntsTuristicos1,densidadePopulacional1,pibPerCapita1, populacao2, area2, pib2, numPntsTuristicos2,densidadePopulacional2,pibPerCapita2 ); 
+
 
     return 0;
 }
