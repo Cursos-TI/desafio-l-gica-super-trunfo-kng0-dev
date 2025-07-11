@@ -71,7 +71,7 @@ int main() {
     printf("Informe o código da carta: \n");
     scanf("%s", codigoCarta2);
     printf("Informe o nome da cidade: \n");
-    scanf("%s", nomeCidade1);
+    scanf("%s", nomeCidade2);
     printf("Informe a população da cidade: \n");
     scanf("%lu", &populacao2);
     printf("Informe a área da cidade: \n");
@@ -83,7 +83,14 @@ int main() {
     densidadePopulacional2  = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
+    
 
+        if (populacao1 > populacao2){
+        printf("Carta 1 (%s) venceu!\n", nomeCidade1);
+        } else {
+        printf("Carta 2 (%s) venceu!\n", nomeCidade2);
+    };
+    
 
     return 0;
 }
