@@ -39,7 +39,8 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    char codigoCarta1[10], codigoCarta2[10], estado1[1], estado2[1], nomeCidade1[50], nomeCidade2[50];
+    char codigoCarta1[10], codigoCarta2[10], nomeCidade1[50], nomeCidade2[50];
+    char estado1, estado2;
     int numPntsTuristicos1, numPntsTuristicos2;
     float area1, area2, pib1, pib2;
     float densidadePopulacional1,densidadePopulacional2, pibPerCapita1,pibPerCapita2;
@@ -48,11 +49,11 @@ int main() {
     
     printf("Carta 01:\n"); //insere as informações da primeira carta
     printf("Informe o estado da carta: \n");
-    scanf("%s", &estado1);
+    scanf(" %c", &estado1);
     printf("Informe o código da carta: \n");
-    scanf("%i", &codigoCarta1);
+    scanf("%s", codigoCarta1);
     printf("Informe o nome da cidade: \n");
-    fgets(nomeCidade1, 50, stdin);
+    scanf("%s", nomeCidade1);
     printf("Informe a população da cidade: \n");
     scanf("%lu", &populacao1);
     printf("Informe a área da cidade: \n");
@@ -66,11 +67,11 @@ int main() {
 
     printf("Carta 02:\n"); //insere as informações da segunda carta
     printf("Informe o estado da carta: \n");
-    scanf("%s", &estado2);
+    scanf(" %c", &estado2);
     printf("Informe o código da carta: \n");
-    scanf("%i", &codigoCarta2);
+    scanf("%s", codigoCarta2);
     printf("Informe o nome da cidade: \n");
-    fgets(nomeCidade2, 50, stdin);
+    scanf("%s", nomeCidade1);
     printf("Informe a população da cidade: \n");
     scanf("%lu", &populacao2);
     printf("Informe a área da cidade: \n");
